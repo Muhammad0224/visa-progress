@@ -1,0 +1,460 @@
+{% extends 'visit/basemain.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Start your project here-->
+
+<!--Main layout-->
+<main class="mt-5 mb-4">
+    <div class="container">
+
+        <!-- Container for demo purpose -->
+        <div class="container my-5 p-5 shadow-5">
+
+            <!--Section: Design Block-->
+            <section>
+
+                <h3 class="text-center mb-5">Visa Progress: Muvaffaqiyatli qadamlar</h3>
+
+                <p class="text-center mb-5 mx-auto w-responsive">
+                    Biz bilan chet el tashriflari uchun visa olish va sayohatni rejalashtirish ancha oson. Bosqichma
+                    bosqich vazifalarni bajaring, ortiqcha muammolarsiz visa va sayohatga ega bo'ling. Visa Progress
+                    sizga yordam beradi.
+                </p>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Pills navs -->
+                        <ul class="nav nav-pills nav-justified mb-3 mx-n2 mt-n2" id="issuesTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="students-tab" data-mdb-pill-init href="#students"
+                                   role="tab"
+                                   aria-controls="students" aria-selected="true">
+                                    <i class="fas fa-file-alt me-2"></i>Hujjatlarni tayyorlash
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="candidates-tab" data-mdb-pill-init href="#candidates" role="tab"
+                                   aria-controls="candidates" aria-selected="false">
+                                    <i class="fas fa-plane me-2"></i>Chiptalarni band qilish</a>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="financial-tab" data-mdb-pill-init href="#financial" role="tab"
+                                   aria-controls="financial" aria-selected="false">
+                                    <i class="fas fa-passport me-2"></i>Visa uchun registratsiya
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="housing-tab" data-mdb-pill-init href="#housing" role="tab"
+                                   aria-controls="housing"
+                                   aria-selected="false">
+                                    <i class="fas fa-map-marked-alt me-2"></i>Sayohatga tayyorlanish
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Pills navs -->
+
+                        <!-- Pills content -->
+                        <div class="tab-content pt-3" id="servicesContent">
+                            <div class="tab-pane fade show active" id="students" role="tabpanel"
+                                 aria-labelledby="students-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/images/54.jpg"
+                                             class="img-fluid shadow-3 rounded"
+                                             alt="Sample image"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 class="mb-4">Hujjatlarni tayyorlash</h4>
+                                        <p class="lead mb-0">
+                                            Viza arizangiz uchun zarur bo'lgan barcha hujjatlarni to'plash va tartibga
+                                            solishda yordam beramiz.
+                                            Pasport nusxalari, fotosuratlar, moliyaviy hisobotlar va boradigan davlat
+                                            tomonidan talab qilinadigan har qanday maxsus hujjatlar kiradi. Tashrif
+                                            buyuradigan davlatingiz va maqsadingizga mos holda konsullik talablari
+                                            asosida sizga maslahatlar beriladi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="candidates" role="tabpanel" aria-labelledby="candidates-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
+                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2840%29.jpg"
+                                             class="img-fluid shadow-3 rounded" alt="Sample image"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 class="mb-4">Chiptalarni band qilish</h4>
+                                        <p class="lead mb-0">
+                                            Sayohatning asosiy qismlari hisoblangan avia chiptalar, mehmonxonalar va
+                                            tadbirlarni tashkillashtirish uchun biz sizga ishonchli, sinovdan o'tgan
+                                            takliflarni taqdim etamiz.
+                                            O'zingizga mos tarifni tanlashingiz kifoya.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="financial" role="tabpanel" aria-labelledby="financial-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
+                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2841%29.jpg"
+                                             class="img-fluid shadow-3 rounded" alt="Sample image"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 class="mb-4">Visa uchun registratsiya</h4>
+                                        <p class="lead mb-0">
+                                            Elchinxona yoki konsullik visa arizasini to'g'ri topshirish bo'yicha to'liq
+                                            yo'riqnoma bilan o'zbek tilida tanishib chiqing.
+                                            Tizim ko'rsatmalari asosida topshiriqlarni to'g'ri bajarib o'z joyingizni
+                                            band qiling.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="housing" role="tabpanel" aria-labelledby="housing-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0 pb-xl-2">
+                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2842%29.jpg"
+                                             class="img-fluid shadow-3 rounded" alt="Sample image"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 class="mb-4">Sayogatga tayyorlanish</h4>
+                                        <p class="lead mb-0">
+                                            Sayohat uchun zaruriy maslahatlarni oling. Yuklaringizni va hujjatlaringizni
+                                            yana bir bor tekshiring.
+                                            Bizning integratsiyalashgan tizimimiz sizning xavfsiz va zavqli sayohat
+                                            qilishingiz uchun yordamchi bo'ladi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pills content -->
+
+                    </div>
+                </div>
+                <span id="features"></span>
+            </section>
+            <!--Section: Design Block-->
+
+        </div>
+        <!-- Container for demo purpose -->
+
+
+        <!--Section: Hungary Visa Application Service-->
+        <section>
+            <div class="row gx-5 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay shadow-2-strong" data-mdb-ripple-init
+                         data-mdb-ripple-color="light">
+                        <img src="{% static 'images/country/hungary.jpg' %}" class="img-fluid"
+                             alt="Hungary Visa Service"/>
+                        <!--                        <img src="https://mdbootstrap.com/img/new/slides/080.jpg" class="img-fluid"-->
+                        <a href="#hungary-visa">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <span class="badge badge-info mb-3">Visa Service</span>
+                    <h4><strong>Vengriya davlatiga sayohat</strong></h4>
+                    <p class="text-muted">
+                        Vengriya orqali butun Yevropani kashf qiling. Bizning tizim sizga ertaknamo shahar uchun visa
+                        olishingiz va
+                        sayohatlaringizni rejalashtirishingizga yordam beradi. Quyidagi havolaga bosing va xizmatlardan
+                        foydalaning.
+                    </p>
+                    <a href="" type="button" class="btn btn-primary fs-5"
+                       onclick="window.location.href='#hungary-visa-details'"
+                       data-mdb-ripple-init>
+                        Sinab ko'rish
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Section: Hungary Visa Application Service-->
+
+
+        <hr class="my-5"/>
+
+        <!--Section: News-->
+        <section>
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <!-- Visa Service block -->
+                    <div>
+                        <!-- Featured image -->
+                        <div class="bg-image hover-overlay shadow-1-strong rounded mb-4" data-mdb-ripple-init
+                             data-mdb-ripple-color="light">
+                            <img src="{% static 'images/country/japan.jpg' %}" class="img-fluid"
+                                 alt="Japan Visa Application Service"/>
+                            <a href="#japan-visa-service">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <!-- Service Details -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <a href="#japan-visa-service" class="text-info">
+                                    <i class="fas fa-passport"></i>
+                                    Visa Services
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-end">
+                                <u> Qo'shish jarayonida</u>
+                            </div>
+                        </div>
+
+
+                        <!-- Service title and description -->
+                        <a href="#japan-visa-service" class="text-dark">
+                            <h5>Japan Visa Application</h5>
+                            <p>
+                                Simplify your travel plans to Japan with our comprehensive visa service. From document
+                                preparation to appointment scheduling, we guide you through each essential step for a
+                                seamless experience.
+                            </p>
+                        </a>
+
+                        <hr/>
+
+                        <!-- Visa Types for Japan -->
+                        <a href="#tourist-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-umbrella-beach fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Tourist Visa</strong></p>
+                                    <p>Explore Japan with ease. Learn about tourist visa requirements and how to
+                                        apply.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#business-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-briefcase fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Business Visa</strong></p>
+                                    <p>Visit Japan for business. Find out the necessary steps for obtaining a business
+                                        visa.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#student-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-graduation-cap fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Student Visa</strong></p>
+                                    <p>Pursue education in Japan. Check out the student visa application guidelines.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#work-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-hands-helping fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Work Visa</strong></p>
+                                    <p>Secure employment in Japan. Discover the process for getting a work visa.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Add more visa types as needed -->
+
+
+                        <!-- Add more sections if needed for other steps, e.g., 'Visa Submission', 'Follow-Up' -->
+                    </div>
+                    <!-- Visa Service block -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- Visa Service block -->
+                    <div>
+                        <!-- Featured image -->
+                        <div class="bg-image hover-overlay shadow-1-strong rounded mb-4" data-mdb-ripple-init
+                             data-mdb-ripple-color="light">
+                            <img src="{% static 'images/country/us.jpg' %}" class="img-fluid"
+                                 alt="US Visa Application Service"/>
+                            <a href="#us-visa-service">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <!-- Service Details -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <a href="#us-visa-service" class="text-danger">
+                                    <i class="fas fa-passport"></i> Visa Services
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-end">
+                                <u> Qo'shish jarayonida</u>
+                            </div>
+                        </div>
+
+                        <!-- Service title and description -->
+                        <a href="#us-visa-service" class="text-dark">
+                            <h5>US Visa Application Support</h5>
+                            <p>
+                                Navigate the complexities of US visa applications with our comprehensive support
+                                services. We assist with documentation, scheduling interviews, and more to ensure a
+                                smooth process.
+                            </p>
+                        </a>
+
+                        <hr/>
+
+                        <!-- Visa Types -->
+                        <a href="#b2-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-umbrella-beach fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>B2 Tourist Visa</strong></p>
+                                    <p>Guidance on applying for a B2 tourist visa for leisure travel in the US.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#h1b-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-briefcase fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>H1B Work Visa</strong></p>
+                                    <p>Information and support for acquiring an H1B work visa in the US.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#f1-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-graduation-cap fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>F1 Student Visa</strong></p>
+                                    <p>Steps and assistance for obtaining an F1 visa to study in the US.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#j1-visa" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>J1 Exchange Visa</strong></p>
+                                    <p>Help with J1 visa applications for educational and cultural exchanges in the
+                                        US.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Visa Service block -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- Visa Service block -->
+                    <div>
+                        <!-- Featured image -->
+                        <div class="bg-image hover-overlay shadow-1-strong rounded mb-4" data-mdb-ripple-init
+                             data-mdb-ripple-color="light">
+                            <img src="{% static 'images/country/canada.jpg' %}" class="img-fluid"
+                                 alt="Canada Visa Application Service"/>
+                            <a href="#canada-visa-service">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                        </div>
+
+                        <!-- Service Details -->
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <a href="#canada-visa-service" class="text-warning">
+                                    <i class="fas fa-passport"></i> Visa Services
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-end">
+                                <u> Qo'shish jarayonida</u>
+                            </div>
+                        </div>
+
+                        <!-- Service title and description -->
+                        <a href="#canada-visa-service" class="text-dark">
+                            <h5>Canada Visa Application Support</h5>
+                            <p>
+                                Whether it's for tourism, business, or study, our comprehensive Canada visa services
+                                ensure a smooth application process. Let us help you navigate through the requirements
+                                with ease.
+                            </p>
+                        </a>
+
+                        <hr/>
+
+                        <!-- Visa Type: Tourist Visa -->
+                        <a href="#tourist-visa-canada" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-mountain fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Tourist Visa</strong></p>
+                                    <p>Experience Canada's natural beauty. Learn how to apply for a tourist visa.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Visa Type: Study Visa -->
+                        <a href="#study-visa-canada" class="text-dark">
+                            <div class="row mb-4 border-bottom pb-2">
+                                <div class="col-3 text-center">
+                                    <i class="fas fa-user-graduate fa-2x"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-2"><strong>Study Visa</strong></p>
+                                    <p>Plan your education in Canada with our detailed guidance on obtaining a study
+                                        visa.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- You can add more visa types, such as Work Visa, if needed -->
+                    </div>
+                    <!-- Visa Service block -->
+                </div>
+
+
+            </div>
+        </section>
+        <!--Section: News-->
+    </div>
+</main>
+<!--Main layout-->
+
+{% endblock %}

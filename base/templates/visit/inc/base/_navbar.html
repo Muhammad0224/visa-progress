@@ -1,0 +1,81 @@
+{% load static %}
+<!--Main Navigation-->
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top fs-5">
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="{% url 'homepage' %}">
+                <img src="{% static 'images/logo/logovisa.png' %}" height="40" alt="Visa Progress Logo" loading="lazy"
+                     style="margin-top: -3px"/>
+            </a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Asosiy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tizim qanday ishlaydi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Takliflar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Bog'lanish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'elevator' %}">Elevator pitch</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'form' %}">Sayohatni boshlash</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav d-flex flex-row">
+                    <!-- Social Media Icons (optional) -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <!-- Login/Register -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login'%}">Login/Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-1-strong" style="
+          background-image: url('https://mdbootstrap.com/img/new/slides/052.jpg');
+          height: 400px;
+        ">
+        <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.6)">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-3">Visa Progress</h1>
+                    <h4 class="mb-4">Streamlining Your Travel Experience</h4>
+                    <a class="btn btn-primary text-white fs-5" href="#form-page">Sinab Ko'rish</a>
+                </div>
+            </div>
+            <span id="about"></span>
+        </div>
+    </div>
+    <!-- Background image -->
+</header>
+<!--Main Navigation-->

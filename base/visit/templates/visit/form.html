@@ -1,0 +1,131 @@
+{% extends 'visit/baseelevator.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Start your project here-->
+
+<!--Main layout-->
+
+<!--Main layout-->
+<main class="mt-5 mb-4">
+    <br>
+
+
+    <!-- Container for demo purpose -->
+    <div class="container my-5 py-5 shadow-5">
+
+        <h3 class="text-center mb-5">SAYOHAT BO'YICHA QISQACHA</h3>
+
+        <!--Section: Design Block-->
+        <section class="text-center">
+
+            <form>
+                <!-- 2 column grid layout with text inputs for first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="firstName" class="form-control" required/>
+                            <label class="form-label" for="firstName">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <input type="text" id="lastName" class="form-control" required/>
+                            <label class="form-label" for="lastName">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination country selector -->
+                <div class="form-outline mb-4">
+                    <select class="form-select" id="destinationCountry" required>
+                        <option selected disabled value="">Select Destination Country</option>
+                        <option value="japan">HUNGARY</option>
+                        <option value="japan">Japan</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                    <label class="form-label" for="destinationCountry">Destination Country</label>
+                </div>
+
+                <!-- Purpose of Travel -->
+                <div class="form-outline mb-4">
+                    <select class="form-select" id="purposeOfTravel" required>
+                        <option selected disabled value="">Select Purpose of Travel</option>
+                        <option value="tourism">Tourism</option>
+                        <option value="business">Business</option>
+                        <option value="study">Study</option>
+                        <option value="familyVisit">Family Visit</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label class="form-label" for="purposeOfTravel">Purpose of Travel</label>
+                </div>
+
+                <!-- Travel Date -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="date" id="travelDate" class="form-control" required/>
+                    <label class="form-label" for="travelDate">Travel Date</label>
+                </div>
+
+                <!-- Who will you be traveling with -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="travelCompanions" class="form-control"/>
+                    <label class="form-label" for="travelCompanions">Traveling Companions</label>
+                </div>
+
+                <!-- Number of travelers -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="numberOfTravelers" class="form-control" min="1" required/>
+                    <label class="form-label" for="numberOfTravelers">Number of Travelers</label>
+                </div>
+
+                <!-- Additional Information -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <textarea class="form-control" id="additionalInformation" rows="4"></textarea>
+                    <label class="form-label" for="additionalInformation">Additional Information</label>
+                </div>
+
+                <!-- Contact information -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control" required/>
+                    <label class="form-label" for="email">Email</label>
+                </div>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="phone" class="form-control" required/>
+                    <label class="form-label" for="phone">Phone</label>
+                </div>
+
+                <!-- Checkbox for account creation -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                    <input
+                            class="form-check-input me-2"
+                            type="checkbox"
+                            value=""
+                            id="createAccount"
+                    />
+                    <label class="form-check-label" for="createAccount">Create an account?</label>
+                </div>
+
+                <!-- Submit button -->
+                <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+            </form>
+
+
+        </section>
+
+        <!-- Section: Design Block -->
+    </div>
+</main>
+<!--Main layout-->
+
+{% endblock %}
